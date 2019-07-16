@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/wiprologo"/>
+
+   <Button
+       android:id="@+id/newVisit"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/logo"
+       android:layout_centerHorizontal="true"
+       android:textSize="30dp"
+       android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+       android:text="Create new Visit"/>
+
+    <Button
+        android:id="@+id/futureVisit"
+        android:layout_below="@id/newVisit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Future Visit"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/pastVisit"
+        android:layout_below="@id/futureVisit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Past Visit"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

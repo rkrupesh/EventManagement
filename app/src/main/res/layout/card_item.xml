@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/fdate"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:text="10 July 2019"
+                android:contentDescription="@string/app_name"
+                android:textAlignment="center"
+                android:background="@drawable/border"
+                 />
+
+            <TextView
+                android:id="@+id/tv_stime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/fdate"
+                android:text="Start Time"
+                android:layout_marginLeft="5dp"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/ed_stime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_stime"/>
+
+            <TextView
+                android:id="@+id/tv_etime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_stime"
+                android:layout_toRightOf="@id/fdate"
+                android:layout_marginLeft="5dp"
+                android:text="End Time"
+                android:textAppearance="?android:textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/ed_etime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/tv_stime"
+                android:layout_toRightOf="@id/tv_etime"/>
+
+            <TextView
+                android:id="@+id/text_subtitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_below="@id/tv_etime"
+                android:layout_toEndOf="@id/fdate"
+                android:textAppearance="?android:textAppearanceMedium" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

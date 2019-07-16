@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Event Management</string>
+
+    <string-array name="date">
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </string-array>
+
+    <string-array name="start_time">
+        <item>08:30</item>
+        <item>09:00</item>
+        <item>09:30</item>
+        <item>10:00</item>
+        <item>10:30</item>
+        <item>11:00</item>
+        <item>11:30</item>
+        <item>12:00</item>
+        <item>12:30</item>
+        <item>01:00</item>
+        <item>01:30</item>
+        <item>02:00</item>
+        <item>02:30</item>
+        <item>03:00</item>
+        <item>03:30</item>
+        <item>04:00</item>
+        <item>04:30</item>
+        <item>05:00</item>
+        <item>05:30</item>
+        <item>06:00</item>
+        <item>06:30</item>
+    </string-array>
+
+    <string name="mercury">10th July 2020</string>
+    <string name="venus">15th October 2019</string>
+    <string name="mercury_s">10:30</string>
+    <string name="mercury_e">12:15</string>
+    <string name="venus_s">1:30</string>
+    <string name="venus_e">3:30</string>
+    <string name="uranus">Uranus</string>
+    <string name="neptune">Neptune</string>
+    <string name="pluto">Pluto</string>
+
+    <string name="mercury_sub" formatted="false">Appraisal Discussion</string>
+    <string name="venus_sub" formatted="false">Independence Day</string>
+    <string name="earth_sub" formatted="false">A small, rocky planet which supports a variety of life!</string>
+    <string name="mars_sub" formatted="false">A small, rocky planet which is cold and lifeless.</string>
+    <string name="jupiter_sub" formatted="false">A giant gas planet which is made up of about 90% hydrogen and 10% helium.</string>
+    <string name="saturn_sub" formatted="false">A giant gas planet which is made up of about 75% hydrogen and 25% helium.</string>
+    <string name="uranus_sub" formatted="false">A giant gas planet which is made up of mostly rock and various ices.</string>
+    <string name="neptune_sub" formatted="false">A giant gas planet which is most likely made up of various \"ices\" and rock.</string>
+    <string name="pluto_sub" formatted="false">A small, icy "dwarf planet". Scientists are still unsure as to exactly what it\'s made of.</string>
+</resources>

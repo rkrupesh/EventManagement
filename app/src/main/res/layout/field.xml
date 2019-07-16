@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datetime">
+
+            <TextView
+                android:id="@+id/start1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                />
+            <Spinner
+                android:id="@+id/s_start1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/date"
+                android:layout_below="@id/start1"/>
+
+            <TextView
+                android:id="@+id/end1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/start1"
+                android:layout_marginLeft="50dp"
+                android:text="Start time"/>
+
+            <Spinner
+                android:id="@+id/s_end1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/start_time"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@id/s_start1"
+                android:layout_below="@id/end1"/>
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="50dp"
+                android:text="End time"/>
+
+            <Spinner
+                android:id="@+id/s_date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/start_time"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/s_end1"
+                android:layout_below="@id/end1"/>
+            <EditText
+                android:id="@+id/duration"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:singleLine="false"
+                android:layout_marginBottom="-10dp"
+                android:layout_below="@id/s_start1"
+                android:hint="Enter purpose of visit"/>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <Button
+        android:id="@+id/delete_button1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="-100dp"
+        android:background="@android:drawable/ic_delete"
+        android:onClick="onDelete"/>
+
+</LinearLayout>
